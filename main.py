@@ -1,4 +1,3 @@
-from posix import W_OK
 from fastapi import FastAPI, UploadFile, HTTPException, Path
 from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
