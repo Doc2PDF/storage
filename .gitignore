@@ -1,0 +1,7 @@
+__pycache__
+*/__pycache__
+venv/
+.ropeproject
+.mypy_cache
+*.docx
+*.doc
