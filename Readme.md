@@ -24,3 +24,10 @@ There are 2 routes defined in this service:
 
 To run the whole stack, use this [Dockerfile](https://github.com/Doc2PDF/deployments/blob/main/docker-compose.yaml).
 `docker compose up -d --build`
+
+## Creating New Releases
+
+To create a new release of the app, push a new tag of format `v*` to the repository. The github actions will automatically create a new release and push the docker image to the docker hub.
+
+- `git tag v1.0.0`
+- `git push origin v1.0.0`
