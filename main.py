@@ -22,7 +22,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-DIRECTORY = "../output"
+DIRECTORY = os.getenv("DIR", "../output")
 
 @app.get("/download/{doc_id}")
 async def download_file(
